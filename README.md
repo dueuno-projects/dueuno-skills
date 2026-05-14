@@ -36,6 +36,6 @@ Create a CRUD for the domain Book with title, author, and publication date.
 Create a CRUD for the domain Author with name and age.
 Make books as a favourite feature.
 Create 73 records of mockup data per each domain class.
-Credits for the app: Project Manager: Gianluca Sartori, Developers: Francesco Piceghello, Gianluca Sartori
+Credits for the app: Project Managers: Gianluca Sartori; Software Developers: Francesco Piceghello, Gianluca Sartori.
 ```
 
