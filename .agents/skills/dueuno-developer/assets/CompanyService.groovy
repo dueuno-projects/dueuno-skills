@@ -24,7 +24,7 @@ class CompanyService {
     }
 
     @CompileDynamic
-    private DetachedCriteria<TCompany> buildQuery(Map filterParams) {
+    private DetachedCriteria<TCompany> buildQuery(Map filterParams, Boolean readOnly = false) {
         def query = TCompany.where {}
 
         if (filterParams.containsKey('id')) query = query.where { id == filterParams.id }
@@ -39,6 +39,7 @@ class CompanyService {
 
         // Add additional filters here
 
+        query.readOnly(readOnly)
         return query
     }
 
