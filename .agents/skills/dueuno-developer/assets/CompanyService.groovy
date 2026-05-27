@@ -16,6 +16,7 @@ import jakarta.annotation.PostConstruct
 @CompileStatic
 class CompanyService {
 
+    SecurityService securityService
     AuditService auditService
 
     @PostConstruct
@@ -61,7 +62,6 @@ class CompanyService {
         ]
     }
 
-    @Requires({ id })
     TCompany get(Serializable id) {
         return find(id: id)
     }
@@ -85,6 +85,7 @@ class CompanyService {
 
     @Transactional
     TCompany create(Map args = [:]) {
+        if (args.usernameCreated == null) args.usernameCreated = securityService.currentUsername
         if (args.failOnError == null) args.failOnError = false
 
         TCompany obj = new TCompany(args)
@@ -96,6 +97,7 @@ class CompanyService {
     @CompileDynamic
     @Requires({ args.id })
     TCompany update(Map args = [:]) {
+        if (args.usernameUpdated == null) args.usernameUpdated = securityService.currentUsername
         if (args.failOnError == null) args.failOnError = false
 
         TCompany obj = get(args.id)
