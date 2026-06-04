@@ -33,7 +33,7 @@ Use this skill when the task involves:
 ### Create or Initialize a Dueuno Application
 
 - [ ] Verify that the following dependency is present in `build.gradle`: `implementation "org.apache.grails:grails-core"`. If it is missing, tell the user this is not a Grails project and stop here.
-- [ ] Add the following dependency to `build.gradle`: `implementation "org.dueuno:dueuno-core:3.1.0"`.
+- [ ] Add the following dependency to `build.gradle`: `implementation "org.dueuno:dueuno-core:3.2.0"`.
 - [ ] Add the following code to initialize the application:
 
 ```groovy
