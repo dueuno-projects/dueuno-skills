@@ -166,18 +166,19 @@ The `display` method is one of the main features of _Dueuno_. It renders the GUI
 
 You can call `display` with one or more of the following parameters.
 
-| Name | Type | Default | Description |
-| --- | --- | --- | --- |
-| `controller` | `String` |  | The controller to redirect to. If `action` is not specified, the `index` action is displayed. |
-| `action` | `String` |  | The action to redirect to. If `controller` is not specified, the current controller is used. |
-| `params` | `Map<String, Object>` |  | The parameters to pass when redirecting to a `controller` or `action`. |
-| `content` | `PageContent` |  | The content to display. See [contents](contents.md). |
-| `transition` | `Transition` |  | The transition to display. See [transitions](#transitions). |
-| `modal` | `Boolean` |  | Whether to display the content in a modal dialog. |
-| `wide` | `Boolean` |  | When `modal` is enabled, displays a wider dialog. |
-| `fullscreen` | `Boolean` |  | When `modal` is enabled, makes the dialog fill the browser window. |
-| `closeButton` | `Boolean` | `true` | When `modal` is enabled, displays a close button in the top-left corner so the user can close the dialog and cancel the operation. |
-| `errors` | `org.springframework.validation.Errors` |  | Validation errors to display. |
+| Name           | Type | Default | Description |
+|----------------| --- | --- |-------------|
+| `controller`   | `String` |  | The controller to redirect to. If `action` is not specified, the `index` action is displayed. |
+| `action`       | `String` |  | The action to redirect to. If `controller` is not specified, the current controller is used. |
+| `params`       | `Map<String, Object>` |  | The parameters to pass when redirecting to a `controller` or `action`. |
+| `content`      | `PageContent` |  | The content to display. See [contents](contents.md). |
+| `transition`   | `Transition` |  | The transition to display. See [transitions](#transitions). |
+| `modal`        | `Boolean` |  | Whether to display the content in a modal dialog. |
+| `small`        | `Boolean` |  | When `modal` is enabled, displays a tighter dialog. |
+| `large`        | `Boolean` |  | When `modal` is enabled, displays a wider dialog. |
+| `fullscreen`   | `Boolean` |  | When `modal` is enabled, makes the dialog fill the browser window. |
+| `closeButton`  | `Boolean` | `true` | When `modal` is enabled, displays a close button in the top-left corner so the user can close the dialog and cancel the operation. |
+| `errors`       | `org.springframework.validation.Errors` |  | Validation errors to display. |
 | `errorMessage` | `String` |  | An error message to display to the user. |
-| `exception` | `Exception` |  | An exception to display to the user. |
-| `message` | `String` |  | A message to display to the user. |
+| `exception`    | `Exception` |  | An exception to display to the user. |
+| `message`      | `String` |  | A message to display to the user. |

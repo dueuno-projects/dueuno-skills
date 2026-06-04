@@ -594,7 +594,8 @@ c.form.with {
 | `target` | `String` |  | Target name used to open the page in a browser tab. Links with the same target display in the same tab. |
 | `targetNew` | `Boolean` |  | If `true`, the link opens a new tab each time it is clicked. |
 | `modal` | `Boolean` |  | Whether to display the content in a modal dialog. |
-| `wide` | `Boolean` |  | When `modal` is enabled, displays a wider dialog. |
+| `small`        | `Boolean` |  | When `modal` is enabled, displays a tighter dialog. |
+| `large`        | `Boolean` |  | When `modal` is enabled, displays a wider dialog. |
 | `fullscreen` | `Boolean` |  | When `modal` is enabled, makes the dialog fill the browser window. |
 | `closeButton` | `Boolean` | `true` | When `modal` is enabled, displays a close button in the top-left corner so the user can close the dialog and cancel the operation. |
 | `updateUrl` | `Boolean` | `false` | If `true`, updates the browser address bar with the link destination URL. On mobile phones, the address bar is never updated. |
