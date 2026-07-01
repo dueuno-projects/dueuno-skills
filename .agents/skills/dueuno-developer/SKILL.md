@@ -58,7 +58,7 @@ class BootStrap {
   - `grails-app/assets/javascripts/`
   - `grails-app/assets/stylesheets/`
   - `grails-app/assets/images/`
-  - `grails-app/views/` 
+  - `grails-app/views/`
 
 - [ ] Create the following files:
   - `grails-app/assets/javascripts/application.js`
@@ -151,6 +151,8 @@ IMPORTANT: Verify with the Compliance Checklist and correct if needed
 
 ## Create a Service
 
+Write services using a strongly typed approach to improve code clarity and self-documentation. A service is, in every respect, part of the application’s internal API.
+
 - [ ] Ask the user for the domain class name if it is not specified in the prompt.
 - [ ] Use the template found in `assets` to create a new service.
 - [ ] The service name is not prefixed with `T`.
@@ -161,6 +163,8 @@ IMPORTANT: Verify with the Compliance Checklist and correct if needed
 
 
 ## Create a Controller
+
+Controllers are written using a scripting style. Being the highest layer of the application, they focus on readability and expressive, concise logic. Use `def` to declare variables and methods.
 
 - [ ] To create a controller, a domain class and a service must exist in the project. If they do not exist, ask the user to create them.
 - [ ] Use the template found in `assets` to create a new controller.
