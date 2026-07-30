@@ -2,7 +2,7 @@
 Develop Dueuno applications with AI
 
 
-1. Create a new Grails project: `https://start.grails.org/`
+1. Create a new Grails project (select `Java 25` and `Grails 7.2.x`): https://start.grails.org/
 2. Copy the `.agents` folder on the project root
 3. Load the `dueuno-developer` skill. This depends on the agent you are using. Your IDE may load the `dueuno-developer` skill automatically.
 
